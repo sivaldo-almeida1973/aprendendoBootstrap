@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+
+    <title>Bootstrap - Formulários</title>
+
+  
+
+  </head>
+  <body style="margin-bottom: 200px; padding: 16px;">
+
+   <!-- formularios
+    classe:form-control-<opcoes>
+        opçoes:sm, lg
+
+   -->
+
+   <form action="">
+        <!-- caixas de texto-->
+        <div class="form-group">
+            <label for="usuario">Usuário:</label>
+            <input class="form-control form-control-sm" type="text" id="usuario" placeholder="Digite seu nome">
+
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input class="form-control form-control-sm" type="text" name="email" id="email" placeholder="Digite seu email" readonly>
+            <small class="form-text">Email será validado</small>
+        </div>
+
+        <!--select==================================-->
+
+     <div class="form-group">
+        <label for="estado">Estados:</label>
+        <select class="form-control form-control-sm" id="estado" readonly>
+            <option value="par">PARÁ</option>
+            <option value="par">ALAGOAS</option>
+            <option value="par">SERGIPE</option>
+            <option value="par">MARANHÃO</option>
+            <option value="par">CEARÁ</option>
+
+        </select>
+     </div>
+
+
+     <!-- textarea ===============================-->
+
+     <div class="form-group">
+        <label for="mensagem ">Mensagem:</label>
+        <textarea class="form-control" name="mensagem" id="mensagem" cols="10" rows="3"></textarea>
+     </div>
+     
+     <!--file input **************************-->
+
+     <div class="form-group">
+        <label for="arquivo">Arquivo:</label>
+        <input class="form-control-file" type="file" name="arquivo" id="arquivo">
+     </div>
+
+     <!-- custon file input **********************-->
+
+     <div class="custom-file">
+       
+        <label class="custom-file-label" for="arquivo">Selecione arquivo</label>
+        <input class="custom-file-input " type="file" name="arquivo" id="arquivo">
+      
+     </div>
+
+     <!-- range *******************************-->
+     <div class="form-group">
+        <label for="range">Satisfação</label>
+        <input class="custom-range" type="range" name="range" id="range" min="1" max="5">
+     </div>
+
+
+     <!-- button ===================================-->
+
+     <input class="btn btn-primary" type="submit" value="Salvar">
+
+
+   </form>
+   <br><br>
+
+
+     <!-- Formulario inline=================-->
+
+     <form class="form-inline">
+        <input class="form-control mr-2" type="text" placeholder="Digite seu usuário">
+        <input class="form-control mr-2" type="password" placeholder="Digite sua senha">
+        <input class="btn btn-primary" type="submit" value="Logar">
+     </form>
+     <br><br>
+
+    <!--
+        validação de formulários
+        classe: is-valid, is-invalid, invalid-feedback
+    -->
+    <form >
+
+        <div class="form-group">
+            <label for="email-usuario">Email</label>
+            <input class="form-control is-valid" type="text" name="email-usuario" id="email-usuario" placeholder="Digite seu email">
+            <div class="valid-feedback">
+                Email válido
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="senha-usuario">Email</label>
+            <input class="form-control is-invalid" type="text" name="senha-usuario" id="senha-usuario" placeholder="Digite sua senha">
+            <div class="invalid-feedback">
+                Senha inválida
+            </div>
+        </div>
+
+       
+
+        <button class="btn btn-primary">Logar</button>
+
+    </form>
+        
+
+     <br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" ></script>
+  </body>
+</html>
